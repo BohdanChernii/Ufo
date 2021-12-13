@@ -1,0 +1,71 @@
+.card {
+  width: 25vh;
+  margin: 5px;
+  max-width: 200px;
+  &-info {
+    display: flex;
+  }
+}
+.comments {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.likes {
+  margin-left: 110px;
+  position: relative;
+}
+.text {
+  font-size: 10px;
+  z-index: 3;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin-top: 12.5px;
+  color: #fff;
+}
+.heart {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: '';
+  left: 25px;
+  top: 0;
+  width: 25px;
+  height: 40px;
+  background: #f00000;
+  -moz-border-radius: 25px 25px 0 0;
+  border-radius: 25px 25px 0 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+
+.heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+.heart:hover {
+  transition: 1.6s;
+  transform: scale(1.1);
+}
